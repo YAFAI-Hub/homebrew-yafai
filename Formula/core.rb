@@ -1,4 +1,4 @@
-class Core < Formula
+  class Core < Formula
   desc "Core CLI tool from YAFAI-Hub"
   homepage "https://github.com/YAFAI-Hub/core"
   url "https://github.com/YAFAI-Hub/core/archive/refs/tags/v0.1.0.tar.gz"
@@ -8,10 +8,11 @@ class Core < Formula
   depends_on "go" => :build
 
   def install
-    system "go", "build", *std_go_args(output: bin/"core")
+      system "go", "build", *std_go_args(output: bin/"core")
   end
 
   test do
-    assert_match "core version", shell_output("#{bin}/core --version")
+      assert_match "core version", shell_output("\#{bin}/core --version")
   end
-end
+  end
+  EOF
