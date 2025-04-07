@@ -15,4 +15,5 @@
           assert_match "core version", shell_output("\#{bin}/core --version")
       end
   end
-  EOF
+end
+
