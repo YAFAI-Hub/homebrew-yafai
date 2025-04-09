@@ -34,4 +34,4 @@ class Core < Formula
         assert_match "core version", shell_output("\#{bin}/yafai-core --version")
     end
 end
-end
+
