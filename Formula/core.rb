@@ -23,4 +23,15 @@ class Core < Formula
 
       end
     end
+
+    depends_on "go" => :build
+
+    def install
+        system "go", "build", *std_go_args(output: bin/"yafai-core")
+    end
+
+    test do
+        assert_match "core version", shell_output("\#{bin}/yafai-core --version")
+    end
+end
 end
