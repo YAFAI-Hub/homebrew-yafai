@@ -4,10 +4,10 @@ class Core < Formula
     on_macos do
       if Hardware::CPU.arm?
         url "https://github.com/YAFAI-Hub/core/releases/download/v0.0.1/yafai-core_Darwin_arm64.tar.gz"
-        sha256 "e4d5cdacda0c9ce99abd9f89c61f83fdfa92ec4af49a27bc66f5399be74ac899"
+        sha256 "759d910d6cccc471d1ad166037b9cf2a790463bf404d858a93bbc9427ef30a22"
       else
         url "https://github.com/YAFAI-Hub/core/releases/download/v0.0.1/yafai-core_Darwin_x86_64.tar.gz"
-        sha256 "3147cde8814f207a4a13a6637f686d7c63fe7c027f85f3adec6c8e022f9964b0"
+        sha256 "249b89f263e2e5996c836c7718db9a90d71362bdc1b5a47847692a9fbeb7ff33"
 
       end
     end
@@ -16,10 +16,10 @@ class Core < Formula
       if Hardware::CPU.arm?
 
         url "https://github.com/YAFAI-Hub/core/releases/download/v0.0.1/yafai-core_Linux_arm64.tar.gz"
-        sha256 "d7e61bd67737c5117af89952eeda2c89946333ab1b74e17c4d5f51998751e6c8"
+        sha256 "742fdeda1bfb8ecd978137b8d0631ea892442d6bbd882954f7e333aed811b15f"
       else
         url "https://github.com/YAFAI-Hub/core/releases/download/v0.0.1/yafai-core_Linux_x86_64.tar.gz"
-        sha256 "0fb87074f1fc0567254b150901e7ff9ea70cdf0d1e6371ac48b611a4d4adf455"
+        sha256 "21c9f2a0794c924e6050ab3eab4f1cb4babeac0ca39409c0329df078cc812a91"
 
       end
     end
