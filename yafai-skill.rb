@@ -11,7 +11,7 @@ class YafaiSkill < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/YAFAI-Hub/skills/releases/download/v0.0.1/yafai-skill_Darwin_x86_64.tar.gz"
-      sha256 "01ed5d576639d9b7bee99505f03c3cd98a97314bdf678047c6905532644f592e"
+      sha256 "4afe136498b7abaa0463ad5bcd6729478b2a71088bdd26bcffc2f80987965a65"
 
       def install
         bin.install "yafai-skill"
@@ -19,7 +19,7 @@ class YafaiSkill < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/YAFAI-Hub/skills/releases/download/v0.0.1/yafai-skill_Darwin_arm64.tar.gz"
-      sha256 "13b69eaebeb5c5fb1c63746ce98233a5e7361bd8af1291a4cd1f3d04c115879b"
+      sha256 "a3c67993ff7cdbbc72e6a3a41eaac4a5a615966e5f2deee18b4f1e1d1c5a7963"
 
       def install
         bin.install "yafai-skill"
@@ -31,7 +31,7 @@ class YafaiSkill < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/YAFAI-Hub/skills/releases/download/v0.0.1/yafai-skill_Linux_x86_64.tar.gz"
-        sha256 "b8ee939e5afb67e30f7f24555c689956dca38de4a6b41fc98fe685d2f4625e48"
+        sha256 "e4b698e1b5a9d85726298a48f8d6a6d2e13c00982549f1a5eb296835377fc29f"
 
         def install
           bin.install "yafai-skill"
@@ -41,7 +41,7 @@ class YafaiSkill < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/YAFAI-Hub/skills/releases/download/v0.0.1/yafai-skill_Linux_arm64.tar.gz"
-        sha256 "e5ef70910c775ac6a2a62963d3808289f684d7a9741e4c204eb18b3c5f20268f"
+        sha256 "0fcf9a75a5b8622b2e9388e2378f6bc6440a42e0fc7487771a9ec327f42df5da"
 
         def install
           bin.install "yafai-skill"
