@@ -5,21 +5,21 @@
 class YafaiCore < Formula
   desc "Core homebrew tap"
   homepage "https://github.com/YAFAI-Hub/core"
-  version "0.0.1"
+  version "0.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/YAFAI-Hub/core/releases/download/v0.0.1/yafai-core_Darwin_x86_64.tar.gz"
-      sha256 "5afc826196998cafbf8ba6f14dc25f51480d0217264cca578466a1b5904cd779"
+      url "https://github.com/YAFAI-Hub/core/releases/download/v0.0.2/yafai-core_Darwin_x86_64.tar.gz"
+      sha256 "4a463094a0599a82bf9832ace8c90db4fd4b0e406ec0ba09fb03442ade58956d"
 
       def install
         bin.install "yafai-core"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/YAFAI-Hub/core/releases/download/v0.0.1/yafai-core_Darwin_arm64.tar.gz"
-      sha256 "cff8cc38f7e3cd9729c658341419c3e18410868aaf5ed29b9781564d469f9876"
+      url "https://github.com/YAFAI-Hub/core/releases/download/v0.0.2/yafai-core_Darwin_arm64.tar.gz"
+      sha256 "09a300780ea2ba75aa0ecdf118f4c8288328270cf3e6d1f5ab097e7bb32ef23f"
 
       def install
         bin.install "yafai-core"
@@ -30,8 +30,8 @@ class YafaiCore < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/YAFAI-Hub/core/releases/download/v0.0.1/yafai-core_Linux_x86_64.tar.gz"
-        sha256 "3c191d1b828fc3d50587b9ca0b754f51035107ad1c8f2fc3d2e596377512d289"
+        url "https://github.com/YAFAI-Hub/core/releases/download/v0.0.2/yafai-core_Linux_x86_64.tar.gz"
+        sha256 "2d0935e210b311f2a52ceeb0fda5210ae0d56695b92176f13bd96c1210fd2b63"
 
         def install
           bin.install "yafai-core"
@@ -40,8 +40,8 @@ class YafaiCore < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/YAFAI-Hub/core/releases/download/v0.0.1/yafai-core_Linux_arm64.tar.gz"
-        sha256 "80a2cf205bbfda4b047c9f5d673d737f4e4c00ba89e1c6fe7108073598eb014d"
+        url "https://github.com/YAFAI-Hub/core/releases/download/v0.0.2/yafai-core_Linux_arm64.tar.gz"
+        sha256 "3bd0524d74d527d2fe8c0b2cffb6e43b65c5b5ea5df4711469e26c31bf3e35c8"
 
         def install
           bin.install "yafai-core"
