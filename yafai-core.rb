@@ -11,7 +11,7 @@ class YafaiCore < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/YAFAI-Hub/core/releases/download/v0.0.2/yafai-core_darwin_x86_64.tar.gz"
-      sha256 "4a0dba4a92c42aca7f1df5f1bed71a26a97cd5fd0f5760e49dda22fcbdfcdf19"
+      sha256 "fbf144be1e6b0cbd1ef5bd8a2494e0fb491cfcb848fa96d56a78effefdda8b48"
 
       def install
         bin.install "yafai-core"
@@ -19,7 +19,7 @@ class YafaiCore < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/YAFAI-Hub/core/releases/download/v0.0.2/yafai-core_darwin_arm64.tar.gz"
-      sha256 "17ab94bf23a4ef58af6965943e63a8c7f014d36dbee590a7a7ebfe69bfc1facb"
+      sha256 "f70706a2decaf99291f94c8b5ff9b3d92473799ca2bcb9cfe549df6fae62f622"
 
       def install
         bin.install "yafai-core"
@@ -30,14 +30,14 @@ class YafaiCore < Formula
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
       url "https://github.com/YAFAI-Hub/core/releases/download/v0.0.2/yafai-core_linux_x86_64.tar.gz"
-      sha256 "605e6fb816f2f2ca6c2b11d3cc08f8f2aba905949c936c7d7c2b6ae3fc4ed07a"
+      sha256 "ba90a6cdbf7b77940cf2f52fd1e2bba3a802ac104de2c75cad7ecddc5cd864ef"
       def install
         bin.install "yafai-core"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
       url "https://github.com/YAFAI-Hub/core/releases/download/v0.0.2/yafai-core_linux_arm64.tar.gz"
-      sha256 "0283239bd28fed3a638f8238c9ddae843e0bafe87e50b2120a74a53c68e1f202"
+      sha256 "3fcf555203730b0f99de52db06d538cf8de5b5b8076c302231d07afd2d17ec8f"
       def install
         bin.install "yafai-core"
       end
